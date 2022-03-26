@@ -1,0 +1,88 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>SignInController</servlet-name>
+  	<display-name>SignInController</display-name>
+  	<description></description>
+  	<servlet-class>com.training.ers.controller.SignInController</servlet-class>
+  </servlet>
+   <servlet>
+  	<servlet-name>SignUpController</servlet-name>
+  	<display-name>SignUpController</display-name>
+  	<description></description>
+  	<servlet-class>com.training.ers.controller.SignUpController</servlet-class>
+  </servlet>
+   <!-- <servlet>
+   	<servlet-name>EmployeeSignInController</servlet-name>
+   	<display-name>EmployeeSignInController</display-name>
+   	<description></description>
+   	<servlet-class>com.training.ers.controller.EmployeeSignInController</servlet-class>
+   </servlet> -->
+   <servlet>
+   	<servlet-name>BaseServlet</servlet-name>
+   	<display-name>BaseServlet</display-name>
+   	<description></description>
+   	<servlet-class>com.training.ers.controller.BaseServlet</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>UploadController</servlet-name>
+   	<display-name>UploadController</display-name>
+   	<description></description>
+   	<servlet-class>com.training.ers.controller.UploadController</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>UploadController02</servlet-name>
+   	<display-name>UploadController02</display-name>
+   	<description></description>
+   	<servlet-class>com.training.ers.controller.UploadController02</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>EmployeeSignInController02</servlet-name>
+   	<display-name>EmployeeSignInController02</display-name>
+   	<description></description>
+   	<servlet-class>com.training.ers.controller.EmployeeSignInController02</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>EmployeePasswordChangeController</servlet-name>
+   	<display-name>EmployeePasswordChangeController</display-name>
+   	<description></description>
+   	<servlet-class>com.training.ers.controller.EmployeePasswordChangeController</servlet-class>
+   </servlet> 
+   <servlet-mapping>
+  	<servlet-name>SignInController</servlet-name>
+  	<url-pattern>/SignInController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignUpController</servlet-name>
+  	<url-pattern>/SignUpController</url-pattern>
+  </servlet-mapping>
+ <!--  <servlet-mapping>
+  	<servlet-name>EmployeeSignInController</servlet-name>
+  	<url-pattern>/EmployeeSignInController</url-pattern>
+  </servlet-mapping> -->
+  <servlet-mapping>
+  	<servlet-name>BaseServlet</servlet-name>
+  	<url-pattern>/BaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UploadController</servlet-name>
+  	<url-pattern>/UploadController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UploadController02</servlet-name>
+  	<url-pattern>/UploadController02</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeeSignInController02</servlet-name>
+  	<url-pattern>/EmployeeSignInController02</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeePasswordChangeController</servlet-name>
+  	<url-pattern>/EmployeePasswordChangeController</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>

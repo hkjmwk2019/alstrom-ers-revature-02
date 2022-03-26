@@ -1,0 +1,75 @@
+h1 {
+	text-align: center;
+	background-color: yellow;
+	color: red;
+	font-family: cursive;
+}
+
+
+p#p1 {
+	color: green;
+}
+
+hr {
+	color: green;
+}
+.mycolor {
+	color:orange;
+	font-size: xx-large;
+}
+.important {
+	background-color: navy;
+	font-style: italic;
+}
+.notes {
+	background-color: gray;
+	font-style: oblique;
+}
+
+A:link {
+	color: green
+}
+A:visited {
+	color: purple;
+}
+A:hover {
+	color:white;
+}
+
+body {
+    background-color:lightgreen;
+}
+@media only screen and (min-width: 600px) {
+
+   .username:before
+   {
+	content:"User Name :";
+   }
+    body	
+   {
+      background-color:lightblue;
+   }
+}
+@media only screen and (min-width: 780px) {
+
+   .username:before
+   {
+	content:"Please enter User Name :";
+   }
+    body	
+   {
+      background-color:pink;
+   }
+}
+@media only screen and (max-width: 500px) {
+
+   .username:before
+   {
+	content:":::";
+	
+   }
+   body	
+   {
+      background-color:lightblue;
+   }
+}
