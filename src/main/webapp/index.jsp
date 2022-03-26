@@ -5,7 +5,7 @@
 
 </head>
 <body>
-	<h2 align="left"> Revature-ERS-System </h2>
+	<h3 align="left"> Revature-ERS-System </h3>
 	<h3 align="left" ><% out.println(new java.util.Date());  %></h3>
 	<br/>
 	<br/>
