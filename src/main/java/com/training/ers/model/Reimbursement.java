@@ -3,7 +3,8 @@ package com.training.ers.model;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Reimbursement {
+
+public class Reimbursement implements Comparable<Reimbursement>{
 	
 	private int reimburseId;
 	private String employeename;
@@ -120,10 +121,16 @@ public class Reimbursement {
 	}
 	@Override
 	public String toString() {
-		return "Reimburement [reimburseId=" + reimburseId + ", employeename=" + employeename + ", reimburseHotel="
+		return "Reimbursement [reimburseId=" + reimburseId + ", employeename=" + employeename + ", reimburseHotel="
 				+ reimburseHotel + ", reimburseAirplaneticket=" + reimburseAirplaneticket + ", reimburseRentCar="
 				+ reimburseRentCar + ", status=" + status + "]";
 	}
+	@Override
+	public int compareTo(Reimbursement o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
 	
 	
 	

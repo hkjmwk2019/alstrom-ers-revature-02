@@ -1,8 +1,11 @@
 package com.training.ers.model;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class EmployeeUser {
+
+
+public class EmployeeUser implements Comparator<EmployeeUser> {
 	
 	private int userId;
 	private String username;
@@ -135,7 +138,16 @@ public class EmployeeUser {
 		return "EmployeeUser [userId=" + userId + ", username=" + username + ", passwords=" + passwords + ", gender="
 				+ gender + ", notifications=" + notifications + ", qualification=" + qualification + "]" +"\n";
 	}
-
 	
+	public int compare(EmployeeUser o1, EmployeeUser o2) {
+		
+		if(o1.getUserId()<o2.getUserId())
+			return 1;
+		else if (o1.getUserId() < o2.getUserId())
+			return -1;
+		else 
+			return 0;
+	}
+		
 
 }

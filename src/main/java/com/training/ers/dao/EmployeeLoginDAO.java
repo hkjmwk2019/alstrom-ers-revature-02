@@ -8,6 +8,7 @@ import com.training.ers.model.User;
 
 
 public interface EmployeeLoginDAO {
+	
 	public boolean employeeRegister(EmployeeUser user);
 	public boolean employeeValidate(String username, String passwords);
 	

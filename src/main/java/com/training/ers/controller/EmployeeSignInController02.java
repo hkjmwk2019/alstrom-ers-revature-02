@@ -3,12 +3,15 @@ package com.training.ers.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import org.apache.log4j.Logger;
 
 import com.training.ers.dao.EmployeeLoginDAO;
 import com.training.ers.dao.EmployeeLoginDAOImpl;
@@ -18,6 +21,8 @@ import com.training.ers.dao.EmployeeLoginDAOImpl;
  */
 public class EmployeeSignInController02 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	private static Logger log = Logger.getLogger(EmployeeSignInController02.class.getName());
        
     /**
      * @see HttpServlet#HttpServlet()

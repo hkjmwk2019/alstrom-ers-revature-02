@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.log4j.Logger;
+
 import com.training.ers.dao.LoginDAO;
 import com.training.ers.dao.LoginDAOImpl;
 
@@ -18,6 +20,8 @@ import com.training.ers.dao.LoginDAOImpl;
  */
 public class SignInController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	private static Logger log = Logger.getLogger(SignInController.class.getName());
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -71,7 +75,7 @@ public class SignInController extends HttpServlet {
 			dispatcher.include(request, response);			
 		}else { 		
 			out.println("Your username/passwords is incorrect.");
-			out.println("<a href= login.html> Login </a>");
+			out.println("<a href= login02.html> Login </a>");
 		}					
 		out.println("</body> </html>");
 	}

@@ -27,13 +27,13 @@ public class ERSTest extends TestCase {
 	}
 	
 	@Test
-	@DisplayName("Testing login functionlity of ERS")
+	@DisplayName("Testing managerlogin functionlity of ERS")
 	public void testERSLoginFunctionlity() {
-		driver.get("http://localhost:8081/alstrom-ers-revature/login.html");
+		driver.get("http://localhost:8081/alstrom-ers-revature/login02.html");
 		driver.manage().window().maximize();
 		
 		//XPATH locators
-		driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("test0");
+		driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("m1");
 		driver.findElement(By.xpath("//*[@id=\"passwords\"]")).sendKeys("222222");
 		
 		driver.findElement(By.id("btnSubmit")).click();

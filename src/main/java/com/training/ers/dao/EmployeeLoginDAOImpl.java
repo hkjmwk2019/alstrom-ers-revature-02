@@ -6,9 +6,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+
 
 import com.training.ers.model.EmployeeUser;
 import com.training.ers.model.User;
@@ -18,7 +21,9 @@ import com.training.pms.utility.DBConnection;
 
 public class EmployeeLoginDAOImpl implements EmployeeLoginDAO {
 	
-	private static Logger logger= Logger.getLogger(EmployeeLoginDAOImpl.class);
+	private static Logger log= Logger.getLogger(EmployeeLoginDAOImpl.class.getName());
+	
+	
 	Connection con= DBConnection.getConnection();
 	
 	@Override
@@ -46,8 +51,10 @@ public class EmployeeLoginDAOImpl implements EmployeeLoginDAO {
 		}
 		if (rows == 0)
 			return false;
-		else			
+		else	
+		{   // System.out.println(rows + "  employee user resgister successfully ");
 			return true;
+		}
 		
 	}
 	
@@ -101,6 +108,26 @@ public class EmployeeLoginDAOImpl implements EmployeeLoginDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		
+		
+	    // sort users by userId
+		// -- inner class
+		// use case: i have to print the product details in descending
+		//Collections.sort(employeeusers);
+		Collections.sort(employeeusers, new Comparator<EmployeeUser>() {
+			
+			public int compare(EmployeeUser o1,EmployeeUser o2) {
+				if(o1.getUserId()> o2.getUserId())
+					return 1;
+				else if (o1.getUserId() < o2.getUserId())
+					return -1;
+				else 
+					return 0;
+				
+			}
+		});
+			
+		
 		return employeeusers;
 	}
 
@@ -137,6 +164,9 @@ public class EmployeeLoginDAOImpl implements EmployeeLoginDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		
+			
+		
 		return employeeusers;
 	}
 
@@ -222,6 +252,9 @@ public class EmployeeLoginDAOImpl implements EmployeeLoginDAO {
 		
 		
 	}
+
+
+	
 
 	
 }

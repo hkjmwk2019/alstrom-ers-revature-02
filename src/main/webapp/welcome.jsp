@@ -13,7 +13,10 @@
    <h2  align="left" >Welcome Managers</h2>
    <br/>
 	<a href="searchReimburseByStatusResult02.jsp"> Pending Reimbursement Application</a> |
+	<a href="searchReimburseByName.jsp">Search Reimbursement By Applicant </a> |
 	<a href="signUp.html">Add New Employee</a> |
+	<a href= "displayUserDetails.jsp"> View All Employees </a> |
+	<a href="searchUser.jsp">Search Employee By Name</a>|
 	<a href="index.jsp">Logout</a>
 	<br/>
 

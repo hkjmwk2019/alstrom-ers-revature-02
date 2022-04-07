@@ -17,7 +17,9 @@ import com.training.pms.utility.DBConnection;
 
 public class LoginDAOImpl implements LoginDAO {
 	
-	private static Logger logger= Logger.getLogger(LoginDAOImpl.class);
+	private static Logger log= Logger.getLogger(LoginDAOImpl.class.getName());
+	
+	
 	Connection con= DBConnection.getConnection();
 	
 	@Override
